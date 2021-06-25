@@ -1,10 +1,17 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-identity-kyc'
-import 'react-identity-kyc/dist/index.css'
+import useIdentityPayKYC from 'react-identity-kyc'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  const config = {
+    first_name:"Create React Library Example 😄",
+    last_name:"asas",
+    email:"sjusudhsu@test.com",
+    merchant_key:"rvnn3ingodoed5ouy0z4:Cq_dXaVYS6F_R5HOQetA6HcLqKw",
+    callback:(response)=>console.log(response)
+  }
+  const verifyWithIdentity = useIdentityPayKYC(config)
 
+  return <button onClick={verifyWithIdentity} >Click to Test</button>
+}
 export default App
