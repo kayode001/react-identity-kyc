@@ -13,19 +13,26 @@ npm install --save react-identity-kyc
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import useIdentityPayKYC from 'react-identity-kyc'
 
-import MyComponent from 'react-identity-kyc'
-import 'react-identity-kyc/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const App = () => {
+  const config = {
+    first_name:"Create React Library Example 😄",
+    last_name:"asas",
+    email:"sjusudhsu@test.com",
+    merchant_key:"rvnn3ingodoed5ouy0z4:Cq_dXaVYS6F_R5HOQetA6HcLqKw",
+    callback:(response)=>console.log(response)
   }
+  const verifyWithIdentity = useIdentityPayKYC(config)
+
+  return <button onClick={verifyWithIdentity} >Click to Test</button>
 }
+export default App
+
 ```
 
 ## License
 
 MIT © [kayode001](https://github.com/kayode001)
-"# react-identity-kyc" 
+"# react-identity-kyc"
