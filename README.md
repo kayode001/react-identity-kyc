@@ -28,3 +28,4 @@ class Example extends Component {
 ## License
 
 MIT © [kayode001](https://github.com/kayode001)
+"# react-identity-kyc" 
