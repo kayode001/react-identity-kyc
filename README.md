@@ -1,6 +1,6 @@
 # react-identity-kyc
 
-> MyIdentityPay ReactJS KYC verification library
+>IdentityPass ReactJS KYC verification library
 
 [![NPM](https://img.shields.io/npm/v/react-identity-kyc.svg)](https://www.npmjs.com/package/react-identity-kyc) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -18,10 +18,10 @@ import useIdentityPayKYC from 'react-identity-kyc'
 
 const App = () => {
   const config = {
-    first_name:"Create React Library Example 😄",
+    first_name:"test name",
     last_name:"asas",
     email:"sjusudhsu@test.com",
-    merchant_key:"rvnn3ingodoed5ouy0z4:Cq_dXaVYS6F_R5HOQetA6HcLqKw",
+    merchant_key:"",
     callback:(response)=>console.log(response)
   }
   const verifyWithIdentity = useIdentityPayKYC(config)
@@ -34,5 +34,5 @@ export default App
 
 ## License
 
-MIT © [kayode001](https://github.com/kayode001)
+MIT © [kayode001](https://github.com/IdentityPass)
 "# react-identity-kyc"
