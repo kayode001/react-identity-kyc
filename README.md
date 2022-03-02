@@ -32,6 +32,8 @@ export default App
 
 ```
 
+
+```jsx
 RESPONSES
 
 1. Failed response:
@@ -60,7 +62,7 @@ RESPONSES
           channel:"Channel goes here", e.g BVN,NIN and many more
 
       }
-       
+ ```      
 
 ## License
 
