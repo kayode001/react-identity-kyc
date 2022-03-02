@@ -32,6 +32,36 @@ export default App
 
 ```
 
+RESPONSES
+
+1. Failed response:
+         {
+          code: "E01",
+          message: "Message goes here",
+          status: "failed"
+      }
+      
+ 2. Cancelled
+      {
+          code: "E02",
+          message: "Verification Canceled",
+          status: "failed"
+      } 
+ 3. Success
+        {
+          code: "00",
+          status: "success",
+          message: "Verification Successful",
+          data:{
+              //Verification data goes here
+              // kindly check official documentation for data structure for each channel
+              //https://developer.myidentitypass.com
+              },
+          channel:"Channel goes here", e.g BVN,NIN and many more
+
+      }
+       
+
 ## License
 
 MIT © [kayode001](https://github.com/IdentityPass)
