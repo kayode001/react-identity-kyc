@@ -10,6 +10,8 @@ const useIdentityPayKYC = (props) => {
     last_name: props.last_name,
     email: props.email,
     merchant_key: props.merchant_key,
+    user_ref:props.user_ref,
+    is_test:props.is_test,
     callback: props.callback
   }
 
@@ -34,6 +36,8 @@ useIdentityPayKYC.propTypes = {
   last_name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   merchant_key: PropTypes.string.isRequired,
+  user_ref: PropTypes.string,
+  is_test: PropTypes.string.isRequired,
   callback: PropTypes.func.isRequired
 }
 

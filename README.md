@@ -22,6 +22,8 @@ const App = () => {
     last_name:"asas",
     email:"sjusudhsu@test.com",
     merchant_key:"",
+    user_ref:"a unique ref for your users",
+    is_test:false,  //set this to through for a test
     callback:(response)=>console.log(response)
   }
   const verifyWithIdentity = useIdentityPayKYC(config)
