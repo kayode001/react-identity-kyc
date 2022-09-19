@@ -15,6 +15,7 @@ interface Props {
   merchant_key: string,
   user_ref: string,
   is_test: boolean,
+  config_id: string,
   callback: () => void
 }
 
@@ -27,6 +28,7 @@ const useIdentityPayKYC = (props:Props) => {
     email: props.email,
     merchant_key: props.merchant_key,
     user_ref: props.user_ref,
+    config_id:props.config_id,
     is_test: props.is_test,
     callback: props.callback
   }

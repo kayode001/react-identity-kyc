@@ -1,6 +1,6 @@
 # react-identity-kyc
 
->IdentityPass ReactJS KYC verification library
+>IdentityPass ReactJS Verification library
 
 [![NPM](https://img.shields.io/npm/v/react-identity-kyc.svg)](https://www.npmjs.com/package/react-identity-kyc) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -18,12 +18,13 @@ import useIdentityPayKYC from 'react-identity-kyc'
 
 const App = () => {
   const config = {
-    first_name:"test name",
-    last_name:"asas",
-    email:"sjusudhsu@test.com",
+    first_name:"test",
+    last_name:"test",
+    email:"kayode@myidentitypass.com",
     merchant_key:"",
-    user_ref:"a unique ref for your users",
+    user_ref:"a unique ref for your user",
     is_test:false,  //set this to through for a test
+    config_id:"<configuration ID retrieve from your widget settings", //optional
     callback:(response)=>console.log(response)
   }
   const verifyWithIdentity = useIdentityPayKYC(config)

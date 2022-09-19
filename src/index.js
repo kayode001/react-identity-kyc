@@ -12,7 +12,8 @@ const useIdentityPayKYC = (props) => {
     merchant_key: props.merchant_key,
     user_ref:props.user_ref,
     is_test:props.is_test,
-    callback: props.callback
+    callback: props.callback,
+    config_id: props.config_id,
   }
 
   // eslint-disable-next-line no-unused-vars
@@ -24,7 +25,7 @@ const useIdentityPayKYC = (props) => {
 
   useEffect(() => {
     if (scriptError) {
-      throw new Error('Could not load identitypay KYC script')
+      throw new Error('Could not load identitypass KYC script')
     }
   }, [scriptError])
 
@@ -37,6 +38,7 @@ useIdentityPayKYC.propTypes = {
   email: PropTypes.string.isRequired,
   merchant_key: PropTypes.string.isRequired,
   user_ref: PropTypes.string,
+  config_id: PropTypes.string,
   is_test: PropTypes.string.isRequired,
   callback: PropTypes.func.isRequired
 }

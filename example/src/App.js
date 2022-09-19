@@ -4,10 +4,12 @@ import useIdentityPayKYC from 'react-identity-kyc'
 
 const App = () => {
   const config = {
-    first_name:"test name",
-    last_name:"test name",
-    email:"sjusudhsu@test.com",
+    first_name:"",
+    last_name:"",
+    email:"",
     merchant_key:"",
+    user_ref:"",
+    config_id:"",
     callback:(response)=>console.log(response)
   }
   const verifyWithIdentity = useIdentityPayKYC(config)
