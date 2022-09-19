@@ -69,5 +69,5 @@ RESPONSES
 
 ## License
 
-MIT © [kayode001(Olayiwola Kayode)](https://github.com/kayode001)
+MIT © [kayode001(Kayode Olayiwola)](https://github.com/kayode001)
 "# react-identity-kyc"
