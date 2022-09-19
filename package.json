@@ -1,7 +1,7 @@
 {
   "name": "react-identity-kyc",
-  "version": "1.0.3",
-  "description": "IdentityPass ReactJS KYC verification library",
+  "version": "1.0.4",
+  "description": "IdentityPass ReactJS Verification library",
   "author": "kayode001",
   "license": "MIT",
   "repository": "kayode001/react-identity-kyc",
