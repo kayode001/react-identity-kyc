@@ -2,6 +2,8 @@
 
 >IdentityPass ReactJS Verification library
 
+>INTRODUCING PREMBLY 2.0
+
 [![NPM](https://img.shields.io/npm/v/react-identity-kyc.svg)](https://www.npmjs.com/package/react-identity-kyc) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
