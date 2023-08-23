@@ -1,3 +1,4 @@
+"use client";
 import { useEffect } from 'react'
 import { identityScriptLoader } from './components/loadScript'
 import PropTypes from 'prop-types'

@@ -1,5 +1,7 @@
 /* eslint-disable prettier/prettier */
+"use client";
 import { useEffect } from 'react'
+
 import { identityScriptLoader } from './components/loadScript'
 
 declare global {
