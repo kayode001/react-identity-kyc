@@ -15,7 +15,7 @@ export const identityScriptLoader = () => {
 
   useEffect(() => {
     var tag = document.createElement('script')
-    tag.src = 'https://js.prembly.com/v1/inline/widget.js'
+    tag.src = 'https://js.prembly.com/v1/inline/widget-v2.js'
     tag.async = true
     tag.addEventListener('load', onScriptLoaded)
     tag.addEventListener('complete', onScriptLoaded)
